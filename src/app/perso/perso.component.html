@@ -1,0 +1,65 @@
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <section class="header">   
+            <div class="menu">
+                <div><p>cv</p></div>
+                <div><p>About Me</p></div>
+                <div>Projet</div>
+            </div>
+        </section>
+        <div class="background_img">
+            
+        </div>
+        <div class="cover">
+                    <h1 class="texte">
+                      decouvre moi juste en dessous  
+                    </h1>
+                <button id="buttonfleche">
+                    <img id="fleche" src="../../assets/flechebas.png">
+                </button>
+            
+        </div>
+   <section>
+    
+    <section class="section_pres">
+         <app-skill *ngIf="!showAutreComponent"></app-skill>
+         <button class="button-skill"(click)="toggleAutreComponent()" *ngIf="!showAutreComponent"><img id="croix-bleu" src="../../assets/bouton-croix.png"></button>
+        <div class="astro">
+        <img class="img-astro" src="../../assets/moi.png">
+            <div id="fond-carre">
+
+            </div>
+        </div>
+        <div>
+            <div  class="cracteristique">
+                <h1 id="PresentationM">
+                Bonjour à tous,
+                Moi, c'est Enzo Nibaudeau. Actuellement en troisième année de MMI<br> (Métiers du Multimédia et de l'Internet),<br> ma passion pour le développement web remonte à mes années lycée.<br> Aujourd'hui, je me trouve à deux pas, ou plutôt à deux années,<br> de conclure mon parcours universitaire et de m'immerger pleinement dans le monde professionnel. 
+                </h1>
+                <div class="competences">
+                    <p>Compétences</p>
+                    <button id="buttonfleche" (click)="toggleAutreComponent()">
+                        <img id="fleche" src="../../assets/flechebas.png">
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</section> 
+<section class="gray">
+  <div class="Zclicker"><p>Zclicker</p></div>
+  <div class="Jpo"><p>Jpo</p></div>
+  <div class="Webdoc"><p>Labyrinth 3d</p></div>
+  <div class="Flynt"><p>Flynt Jeux </p></div>
+  <div class="Presentation"><p>Affiche</p></div>
+</section>
+</body>
+

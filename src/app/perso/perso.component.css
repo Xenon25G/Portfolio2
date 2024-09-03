@@ -1,0 +1,390 @@
+body {
+    position: relative;
+    height: 100vh;
+    background-color:white;
+  }
+  body{
+    margin: 0px ;
+}
+app-skill{
+  position: absolute;
+  z-index: 10;
+}
+.button-skill{  
+  position: absolute;
+  background: none;
+  border: none;
+  margin-top: 2vh;
+  margin-left: 90%;
+  height: 51px;
+  z-index: 11;
+}
+#croix-bleu{
+  width: 50px;
+  height: 50px;
+}
+.header{
+    position: absolute;
+    background-color:#060e51d3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 99vw;
+    height: 5vh;
+    z-index: 3;
+    color: white;
+}
+.background_img{
+    position: relative;
+    
+    background-image: url("../../assets/wallpaper.gif");
+    display: flex;
+    flex-wrap: nowrap;
+    width: 99vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+.menu{
+  font-family: "Cabin", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10%;
+  margin-right: 5%;
+}
+.cover{
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, blue, transparent);
+    background-position: center top;
+    width: 99vw;
+    height: 200vh;
+    top: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+  .texte {
+    margin-top: 35%;
+    width: 660px;
+    animation: ecriture 2s steps(22), animate .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    border-right: 2px solid;
+    font-size: 3em;
+  }
+@keyframes ecriture {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes animate {
+    50% {
+      border-color: transparent
+    }
+  }
+#buttonfleche{
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+#fleche{
+    
+    width: 2vw;
+    height: 4vh;
+}
+
+  .section_pres{
+    display: flex;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    
+  }
+  
+  .cracteristique{
+    width: 45%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.37) 0px 50px 100px -20px, rgba(0, 0, 0, 0.384) 0px 30px 60px -30px, rgba(10, 37, 64, 0.39) 0px -2px 6px 0px inset;
+  
+  }
+  .competences{
+    padding: 10px;
+    font-size: 32px;
+    background-color: #060E51;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+  }
+ 
+  .img-astro {
+    margin-left: 15vw;
+    height: 70vh;
+    width: 25vw;
+    position: relative;
+    z-index: 1;
+}
+#fond-carre{
+  margin-left: 15vw;
+  left: 5vh;
+    height: 70vh;
+    width: 25vw;
+    background-color: #060E51;
+    position: absolute;
+    top: 48px;
+    z-index: 0;
+}
+  #PresentationM{
+    margin: 20px;
+    font-size: 32px;
+    font-family: 'Cabin', sans-serif;
+    color:  #060E51;
+  }
+  .conteneur-progres {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid rgb(80, 8, 102);
+    overflow: hidden; 
+}
+.cracteristique{
+  transform: translateY(100px);
+}
+
+
+
+
+h3{
+  color: rgb(80, 8, 102);
+  font-family: 'Cabin', sans-serif;
+}
+h1 {
+  margin: 0;
+  padding: 35px 10px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.gray {
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #ffffff;
+  width: 90%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.Presentation, .Flynt,.Zclicker, .Jpo,.Webdoc {
+  width: 25%;
+  height: 80%;
+  background: purple;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 100px;
+  color: white;
+}
+.Presentation{
+  left: 50%;
+  background: #88ce02;
+  background-size: cover;
+  background-image: url("../../assets/Affiche\ style\ couverture\ magazine\ 2.png");
+  color: black;
+  z-index: 1;
+}
+.Flynt {
+  left: 50%;
+  background: #88ce02;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/Flynt.png");
+  color: black;
+  z-index: 2;
+}
+.Webdoc {
+  left: 50%;
+  background-image: url("../../assets/lab.png");
+  color: black;
+  z-index: 3;
+}
+.Jpo {
+  left: 50%;
+  background-image: url("../../assets/Jpo.png");
+  background-size: cover; 
+  color: black;
+  z-index: 4;
+}
+.Zclicker {
+  left: 50%;
+  background-image: url("../../assets/Zclicker.png");
+  color: black;
+  z-index: 5;
+}
+
+.gray p {
+  color: #ccc;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 30px;
+  line-height: 1.4em;
+}
+
+.bottom {
+  width: 100%;
+  color: #ccc;
+  text-align: center;
+  padding: 150px 30px;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+
+.bottom strong {
+  color: white;
+}
+
+a {
+  color: #88ce02;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1600px) { 
+  #PresentationM{
+    margin: 20px;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    color:  #060E51;
+  }
+
+  .competences{
+    padding: 10px;
+    font-size: 9px;
+    background-color: #060E51;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+  }
+  .img-astro {
+    margin-left: 20vw;
+    height: 70vh;
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+@media (max-width: 799px) { 
+  .mobile, .desktop {
+    width: 100vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  #fleche{
+    
+    width: 2vw;
+    height: 2vh;
+  }
+  .gray {
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #ffffff;
+    width: 90%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .gray p {
+    font-size: 1.2em;
+  }
+  .Presentation, .Flynt,.Zclicker, .Jpo,.Webdoc {
+    width: 25vw;
+    height: 80vh;
+    background: purple;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 100px;
+    color: white;
+  }
+  #PresentationM{
+    margin: 20px;
+    font-size: 10px;
+    font-family: 'Cabin', sans-serif;
+    color:  #060E51;
+  }
+  .conteneur-progres {
+    width: 15vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid rgb(80, 8, 102);
+    overflow: hidden; 
+}
+.cracteristique{
+  transform: translateY(100px);
+}
+#croix-bleu{
+  width: 25px;
+  height: 25px;
+}
+.competences{
+  padding: 10px;
+  font-size: 10px;
+  background-color: #060E51;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 50%;
+}
+
+.img-astro {
+  margin-left: 0vw;
+  height: 50vh;
+  width: 40vw;
+  position: relative;
+  z-index: 1;
+}
+#fond-carre{
+  margin-left: 0;
+  left: 5vh;
+  height: 50vh;
+  width: 40vw;
+  background-color: #060E51;
+  position: absolute;
+  top: 48px;
+  z-index: 0;
+}
+.Skill-section{
+  margin-right: 5px;
+}
+}
+      
