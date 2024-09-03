@@ -264,7 +264,8 @@ h1 {
 }
 
 a {
-  color: #88ce02;
+  text-decoration: none; 
+  color: inherit;
   text-decoration: none;
   font-weight: 400;
 }
@@ -282,19 +283,29 @@ a:hover {
 
   .competences{
     padding: 10px;
-    font-size: 9px;
+    font-size: 10px;
     background-color: #060E51;
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    gap: 50%;
+    gap: 60%;
   }
   .img-astro {
     margin-left: 20vw;
-    height: 70vh;
+    height: 80vh;
     width: 30vw;
     position: relative;
     z-index: 1;
+  }
+  #fond-carre{
+    margin-left: 0;
+    left: 30vh;
+        height: 80vh;
+        width: 30vw;
+    background-color: #060E51;
+    position: absolute;
+    top: 48px;
+    z-index: 0;
   }
 }
 
